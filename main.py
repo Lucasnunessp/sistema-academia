@@ -6,8 +6,6 @@ import os
 import time
 import sys
 
-
-# 🔥 FUNÇÃO DE DIGITAÇÃO
 def digitar(texto, velocidade=0.02):
     for letra in texto:
         sys.stdout.write(letra)
@@ -15,13 +13,9 @@ def digitar(texto, velocidade=0.02):
         time.sleep(velocidade)
     print()
 
-
-# 🔥 LIMPAR TELA
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
-# 🚀 TELA DE INICIALIZAÇÃO
 def inicializacao():
     limpar_tela()
     digitar("Inicializando sistema...", 0.03)
@@ -31,8 +25,6 @@ def inicializacao():
     digitar("Sistema pronto!", 0.03)
     time.sleep(1)
 
-
-# 🎯 MENU PRINCIPAL
 def menu():
     while True:
         limpar_tela()
@@ -73,7 +65,5 @@ def menu():
 
         input("\nPressione ENTER para continuar...")
 
-
-# 🚀 EXECUÇÃO
 inicializacao()
 menu()
